@@ -1,0 +1,4 @@
+# Kvasir - reference_images
+Place Kvasir reference_images files here.
+
+For dataset details, see datasets/README.md

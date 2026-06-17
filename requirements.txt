@@ -1,0 +1,17 @@
+ftfy
+omegaconf
+regex
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+transformers==5.0.0
+scikit-learn
+submitit
+termcolor
+torchmetrics
+torchvision
+numpy==1.26.4
+typing
+iopath
+hydra-core
+matplotlib

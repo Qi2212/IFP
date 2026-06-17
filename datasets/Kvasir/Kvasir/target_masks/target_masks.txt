@@ -1,0 +1,4 @@
+# Kvasir - target_masks
+Place Kvasir target_masks files here.
+
+For dataset details, see datasets/README.md

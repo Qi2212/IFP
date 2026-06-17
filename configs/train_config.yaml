@@ -1,0 +1,46 @@
+# ============================================================
+# IFP Training Configuration
+# ============================================================
+# Usage: python train.py --config configs/train_config.yaml
+# ============================================================
+
+# ---- Dataset Settings ----
+data:
+  dataset_name: "coco"           # dataset name (for output naming)
+  num_reference_images: 10       # number of reference images used (for naming)
+  text_feature_dir: "./features/text_features"   # dir with text .pt files
+  img_feature_dir: "./features/image_features"    # dir with image .pt files
+
+# ---- DINO Model Info (for dimension inference) ----
+dino:
+  variant: "dino3h"              # used to infer dino feature dim if needed
+
+# ---- CLIP Model Info (for dimension inference) ----
+clip:
+  variant: "vitb"                # used to infer text feature dim if needed
+
+# ---- Model Architecture ----
+model:
+  proj_dim: 512                  # projection head output dimension
+  hidden_dim: 512                # projection head hidden layer dimension
+
+# ---- Training Hyperparameters ----
+train:
+  epochs: 100                    # total training epochs
+  batch_size: 8                  # number of image .pt files per batch
+  lr: 0.001                      # learning rate
+  seed: 0                        # random seed
+  temperature: 0.07              # contrastive loss temperature
+  device: "cuda:0"               # compute device
+
+# ---- Loss Weights ----
+loss:
+  lambda_clip: 1.0               # contrastive alignment loss weight (default 1.0)
+  lambda_inter: 0.5              # inter-class separation loss weight
+  lambda_bg: 0.5                 # foreground-background separation loss weight
+  lambda_intra: 0.5              # intra-class consistency loss weight
+
+# ---- Output Settings ----
+output:
+  weights_dir: "./weights"       # directory for trained projection weights
+  # saved as: {dataset}_{num_ref}_dinoxx_clipxx.pth

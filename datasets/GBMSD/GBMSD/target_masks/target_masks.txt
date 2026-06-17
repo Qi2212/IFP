@@ -1,0 +1,4 @@
+# GBMSD - target_masks
+Place GBMSD target_masks files here.
+
+For dataset details, see datasets/README.md

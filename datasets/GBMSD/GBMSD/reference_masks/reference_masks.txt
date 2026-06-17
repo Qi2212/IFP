@@ -1,0 +1,4 @@
+# GBMSD - reference_masks
+Place GBMSD reference_masks files here.
+
+For dataset details, see datasets/README.md

@@ -1,0 +1,4 @@
+# GBMSD - target_images
+Place GBMSD target_images files here.
+
+For dataset details, see datasets/README.md

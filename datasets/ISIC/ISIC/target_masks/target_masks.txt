@@ -1,0 +1,4 @@
+# ISIC - target_masks
+Place ISIC target_masks files here.
+
+For dataset details, see datasets/README.md

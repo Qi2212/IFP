@@ -1,0 +1,6 @@
+# COCO / person - target_images
+Place COCO person target_images files here.
+
+COCO contains multiple categories (e.g., person, car, dog, ...).
+Create one subdirectory per category under datasets/COCO/.
+For dataset details, see datasets/README.md

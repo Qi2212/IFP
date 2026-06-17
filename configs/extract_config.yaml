@@ -1,0 +1,35 @@
+# ============================================================
+# IFP Feature Extraction Configuration
+# ============================================================
+# Usage: python extract_features.py --config configs/extract_config.yaml
+# ============================================================
+
+# ---- Dataset Settings ----
+data:
+  dataset_name: "coco"           # dataset name for output naming
+  data_root: "./datasets/COCO"   # path to dataset (contains img/ and ann/)
+
+# ---- DINO Model Settings ----
+dino:
+  variant: "dino3h"              # dino3h, dino3l, dino2b, dino2l, dino2g
+  root: "./dinov3"               # repo root for torch.hub.load (DINOv3)
+  weights_dir: "./dinov3/download_models"  # directory with .pth weights
+
+# ---- CLIP Model Settings ----
+clip:
+  variant: "vitb"                # vitb (ViT-B/16) or vitl (ViT-L/14)
+  path: "./clip/clip-vit-base-patch16"  # local CLIP model path
+
+# ---- Extraction Settings ----
+extract:
+  resize: 512                    # image resize dimension (square)
+  seed: 0                        # random seed
+  max_k: 5                       # maximum K-Means clusters per object
+  device: "cuda:0"               # compute device
+  text_batch_size: 32            # batch size for CLIP text encoding
+
+# ---- Output Settings ----
+output:
+  feature_root: "./features"     # root directory for extracted features
+  # text features saved to: <feature_root>/text_features/
+  # image features saved to: <feature_root>/image_features/

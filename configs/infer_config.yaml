@@ -1,0 +1,42 @@
+# ============================================================
+# IFP Inference Configuration
+# ============================================================
+# Usage: python inference.py --config configs/infer_config.yaml
+# ============================================================
+
+# ---- DINO Model Settings ----
+dino:
+  variant: "dino3h"              # dino3h, dino3l, dino2b, dino2l, dino2g
+  root: "./dinov3"               # repo root for DINOv3 torch.hub
+  weights_dir: "./dinov3/download_models"  # directory with .pth weights
+
+# ---- CLIP Model Settings ----
+clip:
+  variant: "vitb"                # vitb or vitl
+  path: "./clip/clip-vit-base-patch16"
+
+# ---- SAM Settings ----
+sam:
+  family: "sam2"                 # sam1 or sam2
+  variant: "l"                   # sam1: h/l; sam2: l/s/t/b
+  checkpoint: "./sam2/checkpoints/sam2.1_hiera_large.pt"
+  config: "./sam2/sam2/configs/sam2.1/sam2.1_hiera_l.yaml"
+
+# ---- Projection Head Weights ----
+projection:
+  weights_path: "./weights/pretrain_coco_dino3h_clipb_16.pth"  # path to trained projection weights
+  proj_dim: 512                  # must match training projection dim
+
+# ---- Inference Parameters ----
+inference:
+  resize: 512                    # image resize (square)
+  sim_threshold: 0.2             # patch-text cosine similarity threshold for candidate selection
+  max_points: 15                 # maximum number of point prompts (top-K patches)
+  device: "cuda:0"               # compute device
+  text_prompt: ""                # optional text prompt override (empty = use dataset default)
+
+# ---- Input/Output Settings ----
+io:
+  image_path: ""                 # path to single input image
+  mask_save_dir: "./output"      # directory for output segmentation masks
+  dataset_root: ""               # optional: batch test on a dataset

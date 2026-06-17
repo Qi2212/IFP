@@ -1,0 +1,6 @@
+# VOC / person - target_masks
+Place VOC person target_masks files here.
+
+VOC contains multiple categories (e.g., person, car, dog, ...).
+Create one subdirectory per category under datasets/VOC/.
+For dataset details, see datasets/README.md

@@ -1,0 +1,4 @@
+# Kvasir - reference_masks
+Place Kvasir reference_masks files here.
+
+For dataset details, see datasets/README.md

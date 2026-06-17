@@ -1,0 +1,4 @@
+# ISIC - reference_masks
+Place ISIC reference_masks files here.
+
+For dataset details, see datasets/README.md

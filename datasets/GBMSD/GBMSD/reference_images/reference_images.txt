@@ -1,0 +1,4 @@
+# GBMSD - reference_images
+Place GBMSD reference_images files here.
+
+For dataset details, see datasets/README.md
