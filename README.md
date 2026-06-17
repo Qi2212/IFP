@@ -37,12 +37,12 @@ The Segment Anything Model (SAM) has shown impressive performance across a wide 
 
 ## 📖 Recommanded Works
 
-- Trident: Harnessing Vision Foundation Models for High-Performance, Training-Free Open Vocabulary Segmentation.
-- Talk2DINO: Talking to DINO: Bridging Self-Supervised Vision Backbones with Language for Open-Vocabulary Segmentation. [GitHub](https://github.com/lorebianchi98/Talk2DINO)
-- dino.txt: DINOv2 Meets Text: A Unified Framework for Image- and Pixel-Level Vision-Language Alignment.
 - Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching. [GitHub](https://github.com/aim-uofa/Matcher)
-- GBMSeg: Feature-Prompting GBMSeg: One-Shot Reference Guided Training-Free Prompt Engineering for Glomerular Basement Membrane Segmentation.
-- PPO: Plug-and-Play PPO: An Adaptive Point Prompt Optimizer Making SAM Greater.
+- Talk2DINO: Talking to DINO: Bridging Self-Supervised Vision Backbones with Language for Open-Vocabulary Segmentation. [GitHub](https://github.com/lorebianchi98/Talk2DINO)
+- GBMSeg: Feature-Prompting GBMSeg: One-Shot Reference Guided Training-Free Prompt Engineering for Glomerular Basement Membrane Segmentation. [GitHub](https://github.com/XueyuLiu/GBMSeg)
+- PPO: Plug-and-Play PPO: An Adaptive Point Prompt Optimizer Making SAM Greater. [GitHub](https://github.com/XueyuLiu/PPO)
+- dino.txt: DINOv2 Meets Text: A Unified Framework for Image- and Pixel-Level Vision-Language Alignment. [arXiv](https://arxiv.org/pdf/2412.16334)
+- Trident: Harnessing Vision Foundation Models for High-Performance, Training-Free Open Vocabulary Segmentation. [GitHub](https://github.com/YuHengsss/Trident)
 
 ## 🗓️ TODO
 - [x] Release pre-trained models
